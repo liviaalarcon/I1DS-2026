@@ -26,6 +26,3 @@ console.log("-----------------------------------------");
 console.log("->      CALCULADOR DE KILOMETROS       <-");
 console.log("-----------------------------------------");
 console.log(" |>Seu carro pode viajar", kms(50), "Km");
-
-
-
