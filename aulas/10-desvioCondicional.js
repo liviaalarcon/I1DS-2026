@@ -7,7 +7,6 @@ Sintaxe: if( condição )
 */
 
 let anoNascimento = 2005;
-
 if (anoNascimento > 2003) {
   console.log("A pessoa nasceu depois de 2003.");
 }
