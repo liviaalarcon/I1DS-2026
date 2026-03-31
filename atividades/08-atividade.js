@@ -1,44 +1,33 @@
-/*****************************************************
-Lista de Exercícios
-*****************************************************/
-/*
-Dada a matriz abaixo, faça um programa em JavaScript
-que imprima os elementos da sua diagonal principal.
-| 3 5 8 |
-| 1 9 2 |
-| 7 1 4 |
-********************************************************
-Dada a matriz abaixo, faça um programa em JavaScript
-que multiplique seus elementos por um valor x e imprima
-a matriz antes e após a multiplicação.
-| 8 1 3 |
-| 2 9 1 |
-| 4 6 2 |
-*/
+// Dado um vetor, calcule e exibe a quantidade de pares e ímpares
 
+let numeros = [5, 6, 8, 14, 0, 6, 9, 7, 2];
+let par = 0;
+let impar = 0;
+
+for (let i = 0; i < numeros.length; i++) {
+  if (numeros[i] % 2 == 0) par++;
+  else impar++;
+}
+
+console.log("Quantidade de pares:", par);
+console.log("Quantidade de impar:", impar);
+
+// Dado o vetor, multiplique todos os seus elementos por 3
+console.table(numeros);
+
+for (let i = 0; i < numeros.length; i++) {
+  numeros[i] *= 3; // numeros [i] = numeros [i] * 3
+}
+console.log(numeros)
+
+// Dada uma matriz 2x3 imprima todos od seus elementos com as respectivas posiçoes
 let matriz = [
- [3, 5, 8],
- [1, 9, 2],
- [7, 1, 4],
+    [8, 4, 1],
+    [3, 7, 8],
 ]
-console.table(matriz);
+console.table(matriz)
 
 for (let linha = 0; linha < matriz.length; linha++) {
-    for (let coluna = 0; coluna < matriz[0].length; coluna++)
-        console.log("matriz[", linha, ",", coluna, "] =", matriz[linha][coluna]);
+    for (let coluna = 0; coluna < matriz[0].length; coluna++) 
+        console.log("Matriz[", linha, ",", coluna, "] =", matriz[linha][coluna])
 }
-
-console.log("-----------------------------------------------------------")
-
-/*Dada a matriz abaixo, faça um programa em JavaScript
-que multiplique seus elementos por um valor x e imprima
-a matriz antes e após a multiplicação.*/
-console.table(matriz);
-
-matriz = [3, 5, 8, 1, 9, 2, 7, 1, 4,];
-
-console.log('------------------------')
-for (let i = 0; i < matriz.length; i++) {
-  matriz[i] *= 3; // numeros [i] = numeros [i] * 3
-}
-console.log(matriz)
