@@ -1,19 +1,82 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
-body {
-  font-size: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url("../IMG/bg-desktop-light.jpg");
-  background-size: cover;
+body{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100dvh;
+    width: 100%;
+}
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+header{
+   background-color: #1e90ff;
+   color: #ffffff;
+   padding: 24px;
+   text-align: center; /* Alinar o Texto */
+   font-size: 24px;
+}
 
-  text-align: center;
+/* Menu de Navegação */
+nav{
+   background-color: #333;
+   display: flex;
+   justify-content: center;
+   gap: 24px; /* Espaços entre os elementos */
+   padding: 12px;
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold; /* Fonte em negrito */
+}
+
+nav a:hover{ /* Efeito quando passa o mouse */
+    color: #1e90ff;
+    font-style: italic;
+    cursor: progress;
+}
+
+
+/* LAYOUT PRINCIPAL // LEIAUTE */
+
+main{ 
+    display: flex;
+    gap: 24px;
+    padding: 24px;
+}
+
+
+/* LATERAL */
+aside{
+    width: 25%;
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+
+/* CONTEUDO */
+section {
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+}
+ 
+
+/* RODAPÉ */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
